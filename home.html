@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineverse</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Cineverse</h1>
+        <p class="tagline">Beyond the Screen. Into the Universe of Cinema.</p><br><br>
+    </header>
+    
+    <div class="container">
+        <div class="movies">
+            <h2 class="section-title">Available Movies</h2>
+            <div class="card">
+                <div class="poster-wrapper">
+                    <img src="img\spidey.jpg">
+                </div>
+               <span class="card-content">
+                    <h3>Spiderman: Brand new day</h3>
+                    <p class="genre">Adventure/Sci-fi</p>
+                    <p class="price">₹200</p>
+               </span>
+            </div>
+            <div class="card">
+                <div class="poster-wrapper">
+                    <img src="img\harrypotter.jpg">
+                </div>
+                <span class="card-content">
+                    <h3>Harry Potter and the Deathly Hallows</h3>
+                    <p class="genre">Fantasy</p>
+                    <p class="price">₹180</p>
+                </span>
+            </div>
+            <div class="card">
+                <div class="poster-wrapper">
+                    <img src="img\interstellar.jpg" height="250px" width="260px">
+                </div>
+                <span class="card-content">
+                    <h3>Interstellar</h3>
+                    <p class="genre">Sci-fi</p>
+                    <p class="price">₹150</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="layout-container">
+    <aside class="sidebar">
+      <div class="card form-card">
+        <h3>Book Your Tickets</h3>
+        <form class="booking-form">
+          <div class="form-group">
+            <label for="movie-select">Select Movie</label>
+            <select id="movie-select" required>
+              <option value="" disabled selected >-- Select a Movie --</option>
+              <option value="spiderman">Spiderman: Brand New Day</option>
+              <option value="harry-potter">Harry Potter</option>
+              <option value="interstellar">Interstellar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="showtime-select">Select Showtime</label>
+            <select id="showtime-select" required>
+              <option value="" disabled selected>-- Select Time --</option>
+              <option value="12pm">12:00 PM</option>
+              <option value="04pm">04:00 PM</option>
+              <option value="08pm">08:00 PM</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tickets">Number of Tickets</label>
+            <input type="number" id="tickets" placeholder="Enter number of tickets" min="1" required>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">Book Tickets</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+      <br><br>
+      <div class="card bookings-summary">
+        <h3>Your Bookings</h3>
+        <p class="empty-state">No tickets booked yet.</p>
+      </div>
+    </aside>
+    </div>
+<script src="home.js"></script>
